@@ -1,0 +1,12 @@
+<section class="list-section">
+  <div class="container">
+    <% if (field.heading) { %>
+      <h2 class="mb-20"><%= field.heading %></h2>
+    <% } %>
+    <ul>
+      <% field.list_of_features.split('\n').forEach(feature => {%>
+        <li class="mb-2"><%= feature %></li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
